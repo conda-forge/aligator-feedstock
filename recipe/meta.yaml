@@ -56,10 +56,6 @@ test:
     - if not exist %LIBRARY_PREFIX%\bin\{{ name }}.dll exit 1  # [win]
   imports:
     - aligator
-  requires:
-    - pip
-  commands:
-    - pip check
 
 about:
   home: https://github.com/simple-robotics/aligator

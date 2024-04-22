@@ -1,5 +1,9 @@
 MACOSX_DEPLOYMENT_TARGET:
 - '10.9'
+c_stdlib:
+- macosx_deployment_target
+c_stdlib_version:
+- '10.9'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,9 +15,9 @@ cxx_compiler_version:
 fmt:
 - '10'
 libboost_devel:
-- '1.82'
+- '1.84'
 libboost_python_devel:
-- '1.82'
+- '1.84'
 llvm_openmp:
 - '16'
 macos_machine:

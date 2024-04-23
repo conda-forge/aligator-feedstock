@@ -10,7 +10,7 @@ source:
   sha256: bb67906072675cc8984711cb3785003833ab5c41d55c3bb09e0ed032e1e167b5
 
 build:
-  number: 0
+  number: 1
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:
@@ -19,6 +19,7 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - cmake
     - clang  # [win]
     - ninja  # [win]

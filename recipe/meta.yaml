@@ -1,13 +1,13 @@
 {% set name = "aligator" %}
-{% set version = "0.6.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/Simple-Robotics/{{ name }}/releases/download/v{{ version }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 06995f1d4ecce22209583fc8f6b28ad2712a70c411a6ed0038b367b544bd7033
+  url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: 803990b868400fb16a25693b0f0f41d848c1cbe6efbdae13704fc56decdacc83
 
 build:
   number: 0

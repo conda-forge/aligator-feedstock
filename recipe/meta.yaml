@@ -21,12 +21,11 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - cmake
-    - clang  # [win]
     - ninja  # [win]
     - make  # [not win]
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython                                 # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
   host:
     - {{ pin_compatible('proxsuite-nlp') }}
     - eigen

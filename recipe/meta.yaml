@@ -8,9 +8,12 @@ package:
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 803990b868400fb16a25693b0f0f41d848c1cbe6efbdae13704fc56decdacc83
+  patches:
+    # Remove some CMake checks https://github.com/Simple-Robotics/aligator/pull/162
+    - patches/0001-cmake-CMake-don-t-check-anymore-for-dependency-bindi.patch
 
 build:
-  number: 0
+  number: 1
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:
@@ -21,12 +24,11 @@ requirements:
     - {{ compiler('cxx') }}
     - {{ stdlib("c") }}
     - cmake
-    - clang  # [win]
     - ninja  # [win]
     - make  # [not win]
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
-    - cython                                 # [build_platform != target_platform]
+    - numpy                                  # [build_platform != target_platform]
   host:
     - {{ pin_compatible('proxsuite-nlp') }}
     - eigen
@@ -34,8 +36,8 @@ requirements:
     - libboost-devel
     - libboost-python-devel
     - pinocchio
-    # Crocoddyl package is not available on Windows
-    - crocoddyl  # [not win]
+    # Crocoddyl package is not available on Windows, aarch64 and ppc64le
+    - crocoddyl  # [not win and not aarch64 and not ppc64le]
     - python
     - numpy
     - matplotlib-base

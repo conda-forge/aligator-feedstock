@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 803990b868400fb16a25693b0f0f41d848c1cbe6efbdae13704fc56decdacc83
+  patches:
+    - patches/0001-cmake-CMake-don-t-check-anymore-for-dependency-bindi.patch
 
 build:
   number: 1

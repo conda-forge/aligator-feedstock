@@ -34,8 +34,8 @@ requirements:
     - libboost-devel
     - libboost-python-devel
     - pinocchio
-    # Crocoddyl package is not available on Windows
-    - crocoddyl  # [not win]
+    # Crocoddyl package is not available on Windows, aarch64 and ppc64le
+    - crocoddyl  # [not win and not aarch64 and not ppc64le]
     - python
     - numpy
     - matplotlib-base

@@ -13,7 +13,7 @@ source:
     - patches/0001-cmake-CMake-don-t-check-anymore-for-dependency-bindi.patch
 
 build:
-  number: 2
+  number: 3
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:

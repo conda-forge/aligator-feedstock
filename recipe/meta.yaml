@@ -11,6 +11,8 @@ source:
   patches:
     # Remove some CMake checks https://github.com/Simple-Robotics/aligator/pull/162
     - patches/0001-cmake-CMake-don-t-check-anymore-for-dependency-bindi.patch
+    # Update minimal fmt version https://github.com/Simple-Robotics/aligator/pull/173
+    - patches/0002-cmake-Update-minimal-fmt-version.patch
 
 build:
   number: 4

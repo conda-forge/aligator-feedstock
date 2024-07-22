@@ -1,0 +1,83 @@
+From 5d944f93e5c49509d0c64695a5c3f7924e4766c3 Mon Sep 17 00:00:00 2001
+From: Joris Vaillant <joris.vaillant@inria.fr>
+Date: Mon, 22 Jul 2024 13:52:36 +0200
+Subject: [PATCH] gar: Fix non initialized variables
+
+[gar] dense-riccati.hxx : fix forward()
+
++ check for nu size before applying "us"
+---
+ gar/include/aligator/gar/blk-matrix.hpp    | 6 ++++++
+ gar/include/aligator/gar/dense-riccati.hpp | 6 +++---
+ gar/include/aligator/gar/dense-riccati.hxx | 8 ++++++--
+ 3 files changed, 15 insertions(+), 5 deletions(-)
+
+diff --git a/gar/include/aligator/gar/blk-matrix.hpp b/gar/include/aligator/gar/blk-matrix.hpp
+index 91494cf7..2c57052b 100644
+--- a/gar/include/aligator/gar/blk-matrix.hpp
++++ b/gar/include/aligator/gar/blk-matrix.hpp
+@@ -123,6 +123,12 @@ public:
+   }
+ 
+   void setZero() { m_data.setZero(); }
++  static BlkMatrix Zero(const row_dim_t &rowDims, const col_dim_t &colDims) {
++
++    BlkMatrix out(rowDims, colDims);
++    out.setZero();
++    return out;
++  }
+ 
+   template <typename Other> inline void swap(BlkMatrix<Other, N, M> &other) {
+     m_data.swap(other.matrix());
+diff --git a/gar/include/aligator/gar/dense-riccati.hpp b/gar/include/aligator/gar/dense-riccati.hpp
+index 5223d3d3..d8fc2c8f 100644
+--- a/gar/include/aligator/gar/dense-riccati.hpp
++++ b/gar/include/aligator/gar/dense-riccati.hpp
+@@ -34,9 +34,9 @@ public:
+     using ldl_t = decltype(FactorData::ldl);
+     long ntot = std::accumulate(dims.begin(), dims.end(), 0);
+     uint nth = knot.nth;
+-    return FactorData{BlkMat44(dims, dims), BlkVec4(dims, {1}),
+-                      BlkRowMat41(dims, {knot.nx}), BlkRowMat41(dims, {nth}),
+-                      ldl_t{ntot}};
++    return FactorData{BlkMat44::Zero(dims, dims), BlkVec4::Zero(dims, {1}),
++                      BlkRowMat41::Zero(dims, {knot.nx}),
++                      BlkRowMat41::Zero(dims, {nth}), ldl_t{ntot}};
+   }
+ 
+   std::vector<FactorData> datas;
+diff --git a/gar/include/aligator/gar/dense-riccati.hxx b/gar/include/aligator/gar/dense-riccati.hxx
+index 0ec585fe..c34ff59d 100644
+--- a/gar/include/aligator/gar/dense-riccati.hxx
++++ b/gar/include/aligator/gar/dense-riccati.hxx
+@@ -202,10 +202,12 @@ bool RiccatiSolverDense<Scalar>::forward(
+ 
+   uint N = (uint)problem_->horizon();
+   assert(xs.size() == N + 1);
++  assert(us.size() >= N);
+   assert(vs.size() == N + 1);
+   assert(lbdas.size() == N + 1);
+   for (uint i = 0; i <= N; i++) {
+     const FactorData &d = datas[i];
++    const KnotType &model = problem_->stages[i];
+     ConstVectorRef kff = d.ff[0];
+     ConstVectorRef zff = d.ff[1];
+     ConstVectorRef lff = d.ff[2];
+@@ -221,10 +223,12 @@ bool RiccatiSolverDense<Scalar>::forward(
+     ConstRowMatrixRef Lth = d.fth.blockRow(2);
+     ConstRowMatrixRef Yth = d.fth.blockRow(3);
+ 
+-    us[i].noalias() = kff + K * xs[i];
++    if (model.nu > 0)
++      us[i].noalias() = kff + K * xs[i];
+     vs[i].noalias() = zff + Z * xs[i];
+     if (theta_.has_value()) {
+-      us[i].noalias() += Kth * theta_.value();
++      if (model.nu > 0)
++        us[i].noalias() += Kth * theta_.value();
+       vs[i].noalias() += Zth * theta_.value();
+     }
+ 
+-- 
+2.34.1
+

@@ -13,6 +13,8 @@ source:
     - patches/0001-cmake-CMake-don-t-check-anymore-for-dependency-bindi.patch
     # Update minimal fmt version https://github.com/Simple-Robotics/aligator/pull/173
     - patches/0002-cmake-Update-minimal-fmt-version.patch
+    # Fix RiccatiSolverDense initialization https://github.com/Simple-Robotics/aligator/pull/174
+    - patches/0003-gar-Fix-non-initialized-variables.patch
 
 build:
   number: 4

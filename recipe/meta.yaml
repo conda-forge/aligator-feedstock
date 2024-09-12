@@ -1,5 +1,5 @@
 {% set name = "aligator" %}
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +7,10 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 803990b868400fb16a25693b0f0f41d848c1cbe6efbdae13704fc56decdacc83
-  patches:
-    # Remove some CMake checks https://github.com/Simple-Robotics/aligator/pull/162
-    - patches/0001-cmake-CMake-don-t-check-anymore-for-dependency-bindi.patch
-    # Update minimal fmt version https://github.com/Simple-Robotics/aligator/pull/173
-    - patches/0002-cmake-Update-minimal-fmt-version.patch
-    # Fix RiccatiSolverDense initialization https://github.com/Simple-Robotics/aligator/pull/174
-    - patches/0003-gar-Fix-non-initialized-variables.patch
+  sha256: 63e06b2b4a6f9a60ed5cb1192da221494fd7f3ae9ce397d9474dadbfc3ece127
 
 build:
-  number: 4
+  number: 0
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:

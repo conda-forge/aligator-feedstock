@@ -10,7 +10,7 @@ source:
   sha256: 63e06b2b4a6f9a60ed5cb1192da221494fd7f3ae9ce397d9474dadbfc3ece127
 
 build:
-  number: 0
+  number: 1
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:

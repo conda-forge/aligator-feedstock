@@ -29,7 +29,7 @@ requirements:
     - libgomp       # [linux]
     - llvm-openmp   # [osx]
   host:
-    - proxsuite-nlp 0.7.*
+    - proxsuite-nlp >=0.8.0
     - eigen
     - eigenpy
     - libboost-devel

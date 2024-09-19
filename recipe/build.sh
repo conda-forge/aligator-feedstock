@@ -39,11 +39,15 @@ cmake ${CMAKE_ARGS} .. \
       -DBUILD_BENCHMARK=OFF \
       -DBUILD_TESTING=OFF
 
+NCPU=$((${CPU_COUNT} - 1))
+if [[ $CONDA_BUILD_CROSS_COMPILATION == 1 ]]; then
+  NCPU=1
+fi
 # build
-cmake --build . --parallel ${CPU_COUNT}
+cmake --build . --parallel $NCPU
 
 # install
-cmake --build . --parallel ${CPU_COUNT} --target install
+cmake --build . --target install
 
 if [[ $CONDA_BUILD_CROSS_COMPILATION == 1 ]]; then
   sed -i 's|'"$BUILD_PREFIX"'|'"$PREFIX"'|g' $PREFIX/lib/cmake/aligator/aligatorTargets.cmake

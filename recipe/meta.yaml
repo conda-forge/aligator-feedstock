@@ -1,5 +1,5 @@
 {% set name = "aligator" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 63e06b2b4a6f9a60ed5cb1192da221494fd7f3ae9ce397d9474dadbfc3ece127
+  sha256: e4e082bfef84094f06f77baf3bedb0edcf3efdea5cc62cdf7a26381e18a3cca6
 
 build:
-  number: 1
+  number: 0
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:
@@ -29,7 +29,7 @@ requirements:
     - libgomp       # [linux]
     - llvm-openmp   # [osx]
   host:
-    - proxsuite-nlp 0.7.*
+    - proxsuite-nlp >=0.8.0
     - eigen
     - eigenpy
     - libboost-devel

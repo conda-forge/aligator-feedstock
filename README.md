@@ -1,7 +1,7 @@
 About aligator-feedstock
 ========================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/aligator-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/Simple-Robotics/aligator-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/simple-robotics/aligator
 
@@ -22,8 +22,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main">
+          <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+            <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main">
           </a>
         </summary>
         <table>
@@ -31,141 +31,141 @@ Current build status
           <tbody><tr>
               <td>linux_64_numpy1.22python3.10.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.22python3.10.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.22python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_numpy1.22python3.9.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.22python3.9.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.22python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_numpy1.23python3.11.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.23python3.11.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.23python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_64_numpy1.26python3.12.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.26python3.12.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_numpy1.26python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_numpy1.22python3.10.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.22python3.10.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.22python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_numpy1.22python3.9.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.22python3.9.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.22python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_numpy1.23python3.11.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.23python3.11.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.23python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_aarch64_numpy1.26python3.12.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.26python3.12.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_aarch64_numpy1.26python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_numpy1.22python3.10.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.22python3.10.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.22python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_numpy1.22python3.9.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.22python3.9.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.22python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_numpy1.23python3.11.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.23python3.11.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.23python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>linux_ppc64le_numpy1.26python3.12.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.26python3.12.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_ppc64le_numpy1.26python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_numpy1.22python3.10.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.22python3.10.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.22python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_numpy1.22python3.9.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.22python3.9.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.22python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_numpy1.23python3.11.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.23python3.11.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.23python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_numpy1.26python3.12.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.26python3.12.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_numpy1.26python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_numpy1.22python3.10.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.22python3.10.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.22python3.10.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_numpy1.22python3.9.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.22python3.9.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.22python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_numpy1.23python3.11.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.23python3.11.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.23python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_numpy1.26python3.12.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=21372&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.26python3.12.____cpython" alt="variant">
+                <a href="https://dev.azure.com/Simple-Robotics/feedstock-builds/_build/latest?definitionId=None&branchName=main">
+                  <img src="https://dev.azure.com/Simple-Robotics/feedstock-builds/_apis/build/status/aligator-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_numpy1.26python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
@@ -282,7 +282,7 @@ opportunity to confirm that the changes result in a successful build. Once
 merged, the recipe will be re-built and uploaded automatically to the
 `conda-forge` channel, whereupon the built conda packages will be available for
 everybody to install and use from the `conda-forge` channel.
-Note that all branches in the conda-forge/aligator-feedstock are
+Note that all branches in the Simple-Robotics/aligator-feedstock are
 immediately built and any created packages are uploaded, so PRs should be based
 on branches in forks and branches in the main repository should only be used to
 build distinct package versions.

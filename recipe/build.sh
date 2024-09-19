@@ -43,7 +43,7 @@ cmake ${CMAKE_ARGS} .. \
 cmake --build . --parallel ${CPU_COUNT}
 
 # install
-cmake --build . --parallel ${CPU_COUNT} --target install
+cmake --build . --target install
 
 if [[ $CONDA_BUILD_CROSS_COMPILATION == 1 ]]; then
   sed -i 's|'"$BUILD_PREFIX"'|'"$PREFIX"'|g' $PREFIX/lib/cmake/aligator/aligatorTargets.cmake

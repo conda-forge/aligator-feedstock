@@ -10,7 +10,7 @@ source:
   sha256: e2029bf483dcd5312aeb3cf66e645506d9e6f0bd4268260791d1c97d96c2330a
 
 build:
-  number: 0
+  number: 1
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:
@@ -47,7 +47,6 @@ requirements:
     - eigen
     - eigenpy
     - python
-    - {{ pin_compatible('numpy') }}
     - matplotlib-base
     - typed-argument-parser
 

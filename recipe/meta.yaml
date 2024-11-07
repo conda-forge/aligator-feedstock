@@ -8,12 +8,9 @@ package:
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: e2029bf483dcd5312aeb3cf66e645506d9e6f0bd4268260791d1c97d96c2330a
-  patches:
-    # Avoid issue with EigenPy 3.10
-    - patches/0001-python-inline-deprecationTypeToPyObj.patch
 
 build:
-  number: 2
+  number: 3
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:

@@ -8,6 +8,9 @@ package:
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 438f86d1936db448773f19b87e80410d4a3ec9bd91d0e9eb9adf697e118b9039
+  patches:
+    # https://github.com/Simple-Robotics/aligator/pull/260
+    - patches/0001-cmake-Don-t-link-against-all-pinocchio.patch
 
 build:
   number: 1
@@ -26,8 +29,6 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
-    - libgomp       # [linux]
-    - llvm-openmp   # [osx]
   host:
     - proxsuite-nlp >=0.8.0
     - eigen

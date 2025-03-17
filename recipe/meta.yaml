@@ -13,7 +13,7 @@ source:
     - patches/0001-cmake-Don-t-link-against-all-pinocchio.patch
 
 build:
-  number: 3
+  number: 4
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:

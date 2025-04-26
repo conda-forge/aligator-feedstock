@@ -1,5 +1,5 @@
 {% set name = "aligator" %}
-{% set version = "0.12.0" %}
+{% set version = "0.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 9760e8d1f132b6ec95e56c7b8a04dfc12a65586810b25615b01da5b043b3c73f
+  sha256: ee11e407e3c74b2efcfd417eb794febfe43ab2745d0a2812a12f3f47bd22f86b
 
 build:
-  number: 3
+  number: 0
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:

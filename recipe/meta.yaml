@@ -10,7 +10,7 @@ source:
   sha256: ee11e407e3c74b2efcfd417eb794febfe43ab2745d0a2812a12f3f47bd22f86b
 
 build:
-  number: 0
+  number: 1
   # Windows build has to be fixed
   skip: true  # [win]
   run_exports:
@@ -27,7 +27,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
   host:
-    - proxsuite-nlp >=0.8.0
+    - proxsuite-nlp
     - eigen
     - eigenpy
     - libboost-devel

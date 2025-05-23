@@ -339,6 +339,3 @@ Feedstock Maintainers
 * [@olivier-roussel](https://github.com/olivier-roussel/)
 * [@ymontmarin](https://github.com/ymontmarin/)
 
-
-<!-- dummy commit to enable rerendering -->
-

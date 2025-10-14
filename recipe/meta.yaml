@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: 68aeec2ff0a96d2938f3fcbe0eab2644f6cdf03c85f441f5ab8298e62d75dec0
+  patches:
+    - patches/0001-remove-fmt-max-version-spec.patch
 
 build:
   number: 4

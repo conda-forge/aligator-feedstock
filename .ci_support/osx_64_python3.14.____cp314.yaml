@@ -7,7 +7,7 @@ c_stdlib:
 c_stdlib_version:
 - '10.13'
 channel_sources:
-- conda-forge,conda-forge/label/python_rc
+- conda-forge
 channel_targets:
 - conda-forge main
 cxx_compiler:
@@ -15,7 +15,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 fmt:
-- '11.2'
+- '12.0'
 libboost_devel:
 - '1.88'
 libboost_python_devel:
@@ -32,6 +32,3 @@ python:
 - 3.14.* *_cp314
 target_platform:
 - osx-64
-zip_keys:
-- - python
-  - channel_sources

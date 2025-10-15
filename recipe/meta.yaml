@@ -43,6 +43,7 @@ requirements:
     - eigen
     - eigenpy
     - python
+    - pinocchio-python
     - matplotlib-base
     - typed-argument-parser
 

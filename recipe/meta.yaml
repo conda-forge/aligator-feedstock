@@ -46,6 +46,7 @@ requirements:
     - python
     - pinocchio-python
     - matplotlib-base
+    - pinocchio-python
     - typed-argument-parser
 
 test:

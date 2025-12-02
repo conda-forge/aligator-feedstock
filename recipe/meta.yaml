@@ -1,5 +1,5 @@
 {% set name = "aligator" %}
-{% set version = "0.16.0" %}
+{% set version = "0.17.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: fce2c5b172f4430f0d096f2d52ba8e6c18fd1542f0a7264948b304fb4f5cab26
+  sha256: c3ffa537565c015e93423ec30dd4220d92cfe9359c7c55c6056f38affb2a1da9
 
 build:
   number: 0
@@ -40,6 +40,7 @@ requirements:
     - matplotlib-base
     - example-robot-data
     - fmt
+    - mimalloc
   run:
     - eigen
     - eigenpy

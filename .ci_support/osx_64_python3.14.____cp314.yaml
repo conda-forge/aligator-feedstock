@@ -23,7 +23,7 @@ libboost_python_devel:
 macos_machine:
 - x86_64-apple-darwin13.4.0
 mimalloc:
-- 3.1.5
+- 3.2.6
 numpy:
 - '2'
 pin_run_as_build:

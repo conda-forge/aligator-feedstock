@@ -1,0 +1,83 @@
+schema_version: 1
+
+context:
+  name: aligator
+  version: "0.18.0"
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://github.com/Simple-Robotics/${{ name }}/archive/v${{ version }}.tar.gz
+  sha256: cc340e9fb8c315177100f42faa413d84e0bdf51b1f25a6b2e8cd3471fdec927c
+
+build:
+  # Windows build has to be fixed
+  number: 2
+  skip: win
+
+requirements:
+  build:
+    - ${{ compiler('cxx') }}
+    - ${{ stdlib("c") }}
+    - cmake
+    - ninja
+    - pkg-config
+    - if: build_platform != target_platform
+      then:
+        - python
+        - numpy
+        - cross-python_${{ target_platform }}
+  host:
+    - eigen
+    - eigenpy
+    - libboost-devel
+    - libboost-python-devel
+    - pinocchio
+    # Crocoddyl package is not available on Windows, aarch64 and ppc64le
+    - if: not win and not aarch64 and not ppc64le
+      then: crocoddyl
+    - python
+    - numpy
+    - matplotlib-base
+    - example-robot-data
+    - fmt
+    - mimalloc
+  run:
+    - eigen
+    - eigenpy
+    - python
+    - pinocchio-python
+    - matplotlib-base
+    - pinocchio-python
+    - typed-argument-parser
+  run_exports:
+    - ${{ pin_subpackage(name, upper_bound='x.x.x') }}
+
+tests:
+  - python:
+      imports:
+        - aligator
+  - script:
+      - if: not win
+        then: test -f $PREFIX/lib/lib${{ name }}${SHLIB_EXT}
+      - if: win
+        then: if not exist %LIBRARY_PREFIX%\bin\${{ name }}.dll exit 1
+
+about:
+  summary: A versatile and efficient framework for constrained trajectory optimization.
+  license: BSD-2-Clause
+  license_file: LICENSE
+  homepage: https://github.com/simple-robotics/aligator
+  repository: https://github.com/simple-robotics/aligator
+
+extra:
+  recipe-maintainers:
+    - ymontmarin
+    - fabinsch
+    - olivier-roussel
+    - jcarpent
+    - jorisv
+    - ManifoldFR
+

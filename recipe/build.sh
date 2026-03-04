@@ -31,6 +31,7 @@ if [[ $HOST =~ linux ]]; then
 fi
 
 cmake ${CMAKE_ARGS} .. \
+      -GNinja \
       -DCMAKE_BUILD_TYPE=Release \
       -DPYTHON_EXECUTABLE=$PYTHON \
       -DBUILD_PYTHON_INTERFACE=ON \

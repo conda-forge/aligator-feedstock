@@ -14,7 +14,7 @@ source:
 
 build:
   # Windows build has to be fixed
-  number: 2
+  number: 3
   skip: win
 
 requirements:
@@ -62,9 +62,7 @@ tests:
   - script:
       - if: not win
         then: test -f $PREFIX/lib/lib${{ name }}${SHLIB_EXT}
-      - if: win
-        then: if not exist %LIBRARY_PREFIX%\bin\${{ name }}.dll exit 1
-
+        else: if not exist %LIBRARY_PREFIX%\bin\${{ name }}.dll exit 1
 about:
   summary: A versatile and efficient framework for constrained trajectory optimization.
   license: BSD-2-Clause

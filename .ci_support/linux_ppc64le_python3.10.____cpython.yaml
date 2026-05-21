@@ -15,9 +15,9 @@ docker_image:
 fmt:
 - '12.1'
 libboost_devel:
-- '1.88'
+- '1.90'
 libboost_python_devel:
-- '1.88'
+- '1.90'
 mimalloc:
 - 3.3.2
 numpy:

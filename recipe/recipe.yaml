@@ -14,7 +14,7 @@ source:
 
 build:
   # Windows build has to be fixed
-  number: 2
+  number: 3
   skip: win
 
 requirements:

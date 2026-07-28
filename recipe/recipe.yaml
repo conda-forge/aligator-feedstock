@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: aligator
-  version: "0.19.0"
+  version: "0.19.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,11 +10,11 @@ package:
 
 source:
   url: https://github.com/Simple-Robotics/${{ name }}/archive/v${{ version }}.tar.gz
-  sha256: 4ba9502d9a65bbbb2aeab9586275c8905dac84c7f59ecf89b556041d33171c9b
+  sha256: a71446b5e5ba1fb37c57f7051ce8d31b535b3bc5a63459365ab5b3dc96e2ee4b
 
 build:
   # Windows build has to be fixed
-  number: 3
+  number: 0
   skip: win
 
 requirements:
